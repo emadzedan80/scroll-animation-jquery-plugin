@@ -1,0 +1,58 @@
+@import "css";
+/* Main Styles */
+.object1{
+      background-color: var(--primary-color);
+      padding: $secondary-padding;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 275px;
+}
+
+.child{
+      width:100%;
+}
+/* End of Main Styles */
+/* Fade In & Out Objects */
+.scroll1{
+      background-color: var(--secondary-color);
+      padding: $secondary-padding;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 150px;
+}
+.scroll2{
+      background-color: var(--senary-color);
+      padding: $secondary-padding;
+      display: flex;
+      align-items: center;
+      text-align: center;
+}
+.scroll3{
+      background-color: var(--quaternary-color);
+      padding: $secondary-padding;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 400px;
+}
+/* End of Fade In & Out Objects */
+/* Media Queries Styles */
+@media all and (max-width: 320px) {
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+}
+@media all and (min-width: 481px) and (max-width: 576px) {
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+}
+/* End of Media Queries Styles */

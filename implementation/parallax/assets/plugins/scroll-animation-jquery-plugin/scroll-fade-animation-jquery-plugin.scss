@@ -1,0 +1,45 @@
+/* 
+Plugin name:  Scroll Fade Animation jQuery Plugin 
+Version:      3.0.0
+Date Created: 1 Jan 2023
+Author:       Emad Morris Zedan
+Author URL:   https://www.geminitutorials.com
+*/
+.fade-in-out{
+      //Needed For The Fade Plugin
+      opacity: 0;
+}
+/* Media Queries Styles */
+@media all and (max-width: 320px) {
+      .fade-in-out{
+            /* Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+      .fade-in-out{
+            /* Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+      .fade-in-out{
+            /* Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 481px) and (max-width: 576px) {
+      .fade-in-out{
+            /* Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+}
+/* End of Media Queries Styles */

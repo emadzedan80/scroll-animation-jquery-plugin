@@ -1,4 +1,5 @@
 /* Global Styles */
+/* Variables */
 :root{
       //Main Colors
       --primary-light: #ffffff;
@@ -20,6 +21,15 @@
       --quinary-color: #e6b8ff;
       --senary-color: #ffb8d1;
 }
+$primary-radius: 25px;
+$secondary-radius: 12.5px;
+
+$primary-padding: 12.5px;
+$secondary-padding: 25px;
+
+$primary-margin: 12.5px;
+$secondary-margin: 25px;
+/* End of Variables */
 *{
       box-sizing: border-box;
 }
@@ -27,28 +37,49 @@ h1, h2, h3, h4, h5, h6{
       font-family: 'IBM Plex Sans Condensed', sans-serif;
       color: var(--primary-dark);
 }
+a{
+      color: var(--quinary-color);
+      text-decoration: none;
+      &:hover{
+            color: var(--primary-color);
+      }
+}
 .img-fluid{
       width: 100% !important;
       min-width: 100% !important;
       max-width: 100% !important;
 }
-$primary-radius: 25px;
-$secondary-radius: 12.5px;
+.nav-link{
+      box-sizing: content-box;
+      padding: 10px;
+      border-radius: 4px;
+      min-width:74px;
+      &:hover{
+            background-color: var(--primary-light);
+      }
+}
+.dropdown-menu{
+      padding: 0px;
+      border-radius: 0px;
+}
+.dropdown-item{
+      display:block;
+      margin: 0px;
+      padding: $primary-padding;
+}
 
-$primary-padding: 15px;
-$secondary-padding: 30px;
-
-$primary-margin: 12.5px;
-$secondary-margin: 25px;
 /* End of Global Styles */
 /* Main Styles */
 body{
-      background-color: var(--secondary-light);
+      background-color: var(--primary-light);
       padding: 0px;
       margin: 0px;
+      width: 100%;
+      min-width:100%;
+      max-width: 100%;
 }
 header{
-      background-color: var(--primary-light);
+      background-color: var(--quinary-color);
 }
 #search-submit-icon{
       padding: 10px 5px 5px 5px;
@@ -69,64 +100,13 @@ p{
       font-family: 'Oswald', sans-serif;
       color: var(--secondary-dark);
 }
-/* Fade In & Out Objects */
-.test-scroll1{
-      background-color: var(--primary-color);
-      padding: $secondary-padding;
-      width: 275px;
-      margin: 100px 0px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      height: 275px;
-}
-.test-scroll2{
-      background-color: var(--secondary-color);
-      padding: $secondary-padding;
-      width:400px;
-      margin: 100px 0px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      height: 150px;
-}
-.test-scroll3{
-      background-color: var(--senary-color);
-      padding: $secondary-padding;
-      width:100%;
-      margin: 100px 0px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-}
-.test-scroll4{
-      background-color: var(--quaternary-color);
-      padding: $secondary-padding;
-      width:100%;
-      margin: 100px 0px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      height: 400px;
-}
-/* End of Fade In & Out Objects */
-.child{
-      width:100%;
-}
 /* End of Main Styles */
-
-
-
 /* Media Queries Styles */
 @media all and (max-width: 320px) {
       body{
             width: fit-content;
             min-width:fit-content;
             max-width: fit-content;
-      }
-      .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4{
-            /* Fade In & Out Objects Always Visible on Mobile */
-            opacity: 1 !important;
       }
 }
 @media all and (min-width: 321px) and (max-width: 360px) {
@@ -135,10 +115,6 @@ p{
             min-width:fit-content;
             max-width: fit-content;
       }
-      .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4{
-            /* Fade In & Out Objects Always Visible on Mobile */
-            opacity: 1 !important;
-      }
 }
 @media all and (min-width: 361px) and (max-width: 480px) {
       body{
@@ -146,18 +122,10 @@ p{
             min-width:fit-content;
             max-width: fit-content;
       }
-      .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4{
-            /* Fade In & Out Objects Always Visible on Mobile */
-            opacity: 1 !important;
-      }
 }
 @media all and (min-width: 481px) and (max-width: 576px) {
       body{
             width: 100%;
-      }
-      .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4{
-            /* Fade In & Out Objects Always Visible on Mobile */
-            opacity: 1 !important;
       }
 }
 @media all and (min-width: 577px) and (max-width: 768px) {
