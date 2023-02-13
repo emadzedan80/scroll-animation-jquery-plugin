@@ -1,6 +1,6 @@
 /* 
 Plugin name:  Scroll Animation jQuery Plugin 
-Version:      2.0.0
+Version:      3.0.0
 Date Created: 1 Jan 2023
 Author:       Emad Morris Zedan
 Author URL:   https://www.geminitutorials.com
