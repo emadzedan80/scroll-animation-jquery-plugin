@@ -1,0 +1,80 @@
+/* 
+Plugin name:  Scroll Animation jQuery Plugin 
+Version:      3.0.0
+Date Created: 1 Jan 2023
+Author:       Emad Morris Zedan
+Author URL:   https://www.geminitutorials.com
+*/
+body{
+      width: 100%;
+      min-width:100%;
+      max-width: 100%;
+}
+.fade-in-out{
+      //Needed For The Fade In & Out Plugin
+      opacity: 0;
+}
+/* Media Queries Styles */
+@media all and (max-width: 320px) {
+      body{
+            width: fit-content;
+            min-width:fit-content;
+            max-width: fit-content;
+      }
+      .fade-in-out{
+            /* Fade In & Out Objects Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+      body{
+            width: fit-content;
+            min-width:fit-content;
+            max-width: fit-content;
+      }
+      .fade-in-out{
+            /* Fade In & Out Objects Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+      body{
+            width: fit-content;
+            min-width:fit-content;
+            max-width: fit-content;
+      }
+      .fade-in-out{
+            /* Fade In & Out Objects Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 481px) and (max-width: 576px) {
+      body{
+            width: 100%;
+      }
+      .fade-in-out{
+            /* Fade In & Out Objects Always Visible on Mobile */
+            opacity: 1 !important;
+      }
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+      body{
+            width: 100%;
+      }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+      body{
+            width: 100%;
+      }
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+      body{
+            width: 100%;
+      }
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+      body{
+            width: 100%;
+      }
+}
+/* End of Media Queries Styles */

@@ -1,0 +1,191 @@
+/* Global Styles */
+:root {
+  --primary-light: #ffffff;
+  --secondary-light: #efefef;
+  --primary-dark:#000000;
+  --secondary-dark: #333333;
+  /*
+  To Change Colors Use Google Material Color Tool At:
+  https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
+  */
+  --primary-color: #b8d1ff;
+  --secondary-color: #ffe6b8;
+  --tertiary-color: #b8f4ff;
+  --quaternary-color: #c2b8ff;
+  --quinary-color: #e6b8ff;
+  --senary-color: #ffb8d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: var(--primary-dark);
+}
+
+.img-fluid {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* End of Global Styles */
+/* Main Styles */
+body {
+  background-color: var(--secondary-light);
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  background-color: var(--primary-light);
+}
+
+#search-submit-icon {
+  padding: 10px 5px 5px 5px;
+  cursor: pointer;
+  color: var(--secondary-dark);
+}
+#search-submit-icon:hover {
+  color: var(--primary-color);
+}
+
+i:before {
+  font-family: "FontAwesome" !important;
+}
+
+footer {
+  height: 300px;
+  background-color: var(--primary-color);
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  color: var(--secondary-dark);
+}
+
+/* Fade In & Out Objects */
+.test-scroll1 {
+  background-color: var(--primary-color);
+  padding: 30px;
+  width: 275px;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 275px;
+}
+
+.test-scroll2 {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  width: 400px;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+}
+
+.test-scroll3 {
+  background-color: var(--senary-color);
+  padding: 30px;
+  width: 100%;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.test-scroll4 {
+  background-color: var(--quaternary-color);
+  padding: 30px;
+  width: 100%;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+/* End of Fade In & Out Objects */
+.child {
+  width: 100%;
+}
+
+/* End of Main Styles */
+/* Media Queries Styles */
+@media all and (max-width: 320px) {
+  body {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4 {
+    /* Fade In & Out Objects Always Visible on Mobile */
+    opacity: 1 !important;
+  }
+}
+@media all and (min-width: 321px) and (max-width: 360px) {
+  body {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4 {
+    /* Fade In & Out Objects Always Visible on Mobile */
+    opacity: 1 !important;
+  }
+}
+@media all and (min-width: 361px) and (max-width: 480px) {
+  body {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4 {
+    /* Fade In & Out Objects Always Visible on Mobile */
+    opacity: 1 !important;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+  .test-scroll1, .test-scroll2, .test-scroll3, .test-scroll4 {
+    /* Fade In & Out Objects Always Visible on Mobile */
+    opacity: 1 !important;
+  }
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+  body {
+    width: 100%;
+  }
+}
+/* End of Media Queries Styles *//*# sourceMappingURL=css.css.map */
